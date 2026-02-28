@@ -1,0 +1,85 @@
+{
+    "resource_pack_name": "まな板ブロック",
+    "texture_name": "atlas.terrain",
+    "texture_data": {
+        "hraddons:manaita_block_wooden_down": {
+            "textures": "textures/blocks/wooden/manaita_block_wooden_down"
+        },
+        "hraddons:manaita_block_wooden_up": {
+            "textures": "textures/blocks/wooden/manaita_block_wooden_up"
+        },
+        "hraddons:manaita_block_wooden_side": {
+            "textures": "textures/blocks/wooden/manaita_block_wooden_side"
+        },
+
+        "hraddons:manaita_block_stone_down": {
+            "textures": "textures/blocks/stone/manaita_block_stone_down"
+        },
+        "hraddons:manaita_block_stone_up": {
+            "textures": "textures/blocks/stone/manaita_block_stone_up"
+        },
+        "hraddons:manaita_block_stone_side": {
+            "textures": "textures/blocks/stone/manaita_block_stone_side"
+        },
+
+        "hraddons:manaita_block_iron_down": {
+            "textures": "textures/blocks/iron/manaita_block_iron_down"
+        },
+        "hraddons:manaita_block_iron_up": {
+            "textures": "textures/blocks/iron/manaita_block_iron_up"
+        },
+        "hraddons:manaita_block_iron_side": {
+            "textures": "textures/blocks/iron/manaita_block_iron_side"
+        },
+
+        "hraddons:manaita_block_golden_down": {
+            "textures": "textures/blocks/golden/manaita_block_golden_down"
+        },
+        "hraddons:manaita_block_golden_up": {
+            "textures": "textures/blocks/golden/manaita_block_golden_up"
+        },
+        "hraddons:manaita_block_golden_side": {
+            "textures": "textures/blocks/golden/manaita_block_golden_side"
+        },
+
+        "hraddons:manaita_block_diamond_down": {
+            "textures": "textures/blocks/diamond/manaita_block_diamond_down"
+        },
+        "hraddons:manaita_block_diamond_up": {
+            "textures": "textures/blocks/diamond/manaita_block_diamond_up"
+        },
+        "hraddons:manaita_block_diamond_side": {
+            "textures": "textures/blocks/diamond/manaita_block_diamond_side"
+        },
+
+        "hraddons:manaita_block_emerald_down": {
+            "textures": "textures/blocks/emerald/manaita_block_emerald_down"
+        },
+        "hraddons:manaita_block_emerald_up": {
+            "textures": "textures/blocks/emerald/manaita_block_emerald_up"
+        },
+        "hraddons:manaita_block_emerald_side": {
+            "textures": "textures/blocks/emerald/manaita_block_emerald_side"
+        },
+
+        "hraddons:manaita_block_netherite_down": {
+            "textures": "textures/blocks/netherite/manaita_block_netherite_down"
+        },
+        "hraddons:manaita_block_netherite_up": {
+            "textures": "textures/blocks/netherite/manaita_block_netherite_up"
+        },
+        "hraddons:manaita_block_netherite_side": {
+            "textures": "textures/blocks/netherite/manaita_block_netherite_side"
+        },
+
+        "hraddons:manaita_crafting_table_down": {
+            "textures": "textures/blocks/crafting_table/manaita_crafting_table_down"
+        },
+        "hraddons:manaita_crafting_table_up": {
+            "textures": "textures/blocks/crafting_table/manaita_crafting_table_up"
+        },
+        "hraddons:manaita_crafting_table_side": {
+            "textures": "textures/blocks/crafting_table/manaita_crafting_table_side"
+        }
+    }
+}

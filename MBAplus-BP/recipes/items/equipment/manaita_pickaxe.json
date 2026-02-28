@@ -1,0 +1,29 @@
+{
+    "format_version": "1.20.6",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "hraddons:manaita_pickaxe"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "AAA",
+            " B",
+            " B"
+        ],
+        "key": {
+            "A": {
+                "item": "hraddons:manaita_material"
+            },
+            "B": {
+                "item": "stick"
+            }
+        },
+        "result": {
+            "item": "hraddons:manaita_pickaxe",
+            "count": 1
+        },
+        "priority": 2
+    }
+}

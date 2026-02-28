@@ -1,0 +1,26 @@
+{
+    "format_version": "1.19.0",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "hraddons:manaita_bow"
+        },
+
+        "tags": ["crafting_table"],
+        "pattern": [
+            " AB",
+            "A B",
+            " AB"
+        ],
+        "key": {
+            "A": {
+                "item": "hraddons:manaita_material"
+            },
+            "B": {
+                "item": "minecraft:stick"
+            }
+        },
+        "result": {
+            "item": "hraddons:manaita_bow"
+        }
+    }
+}

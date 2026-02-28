@@ -1,0 +1,80 @@
+{
+    "resource_pack_name":"まな板ブロック",
+    "texture_name":"atlas.items",
+    "texture_data":{
+        "manaita_boots": {
+            "textures":"textures/items/armor/manaita_boots"
+        },
+        "manaita_chest": {
+            "textures":"textures/items/armor/manaita_chestplate"
+        },
+        "manaita_chest_knockback": {
+            "textures":"textures/items/armor/manaita_chestplate+"
+        },
+        "manaita_helmet": {
+            "textures":"textures/items/armor/manaita_helmet"
+        },
+        "manaita_leggings": {
+            "textures":"textures/items/armor/manaita_leggings"
+        },
+
+
+        "manaita_axe": {
+            "textures": "textures/items/equipment/manaita_axe"
+        },
+        "manaita_paxel": {
+            "textures": "textures/items/equipment/manaita_paxel"
+        },
+        "manaita_pickaxe": {
+            "textures": "textures/items/equipment/manaita_pickaxe"
+        },
+        "manaita_shovel": {
+            "textures": "textures/items/equipment/manaita_shovel"
+        },
+        "manaita_hoe": {
+            "textures": "textures/items/equipment/manaita_hoe"
+        },
+        "manaita_sword": {
+            "textures": "textures/items/equipment/manaita_sword"
+        },
+        "manaita_bow": {
+            "textures": "textures/items/equipment/manaita_bow_standby"
+        },
+
+
+        "manaita_material": {
+            "textures": "textures/items/items/manaita_material"
+        },
+        "manaita_xp_card": {
+            "textures":"textures/items/items/manaita_xp_card"
+        },
+        "manaita_xp_card_orb": {
+            "textures":"textures/items/items/manaita_xp_card+"
+        },
+        "manaita_operating_instructions": {
+            "textures":"textures/items/items/manaita_operating_instructions"
+        },
+
+        "manaita_click_wooden":{
+            "textures":"textures/items/items/manaita_click_wooden"
+        },
+        "manaita_click_stone":{
+            "textures":"textures/items/items/manaita_click_stone"
+        },
+        "manaita_click_iron":{
+            "textures":"textures/items/items/manaita_click_iron"
+        },
+        "manaita_click_golden":{
+            "textures":"textures/items/items/manaita_click_golden"
+        },
+        "manaita_click_diamond":{
+            "textures":"textures/items/items/manaita_click_diamond"
+        },
+        "manaita_click_emerald":{
+            "textures":"textures/items/items/manaita_click_emerald"
+        },
+        "manaita_click_netherite":{
+            "textures":"textures/items/items/manaita_click_netherite"
+        }
+    }
+}

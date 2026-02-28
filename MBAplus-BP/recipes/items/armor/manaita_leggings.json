@@ -1,0 +1,23 @@
+{
+    "format_version": "1.20.6",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "hraddons:manaita_leggings"
+        },
+        "tags": ["crafting_table"],
+        "pattern": [
+            "AAA",
+            "A A",
+            "A A"
+        ],
+        "key": {
+            "A": {
+                "item": "hraddons:manaita_material"
+            }
+        },
+        "result": {
+            "item": "hraddons:manaita_leggings",
+            "count": 1
+        }
+    }
+}

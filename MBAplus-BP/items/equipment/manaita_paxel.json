@@ -1,0 +1,38 @@
+{
+    "format_version":"1.21.100",
+    "minecraft:item":{
+        "description":{
+            "identifier":"hraddons:manaita_paxel",
+            "menu_category":{
+                "category":"equipment"
+            }
+        },
+        "components":{
+            "minecraft:max_stack_size": 1,
+            "minecraft:allow_off_hand":{
+                "value": false
+            },
+            "minecraft:damage": {
+                "value": 32767
+            },
+            "minecraft:enchantable": {
+                "slot": "pickaxe",
+                "value": 32767
+            },
+            "minecraft:hand_equipped":{
+                "value": true
+            },
+            "minecraft:icon":"manaita_paxel",
+            "minecraft:digger": {
+				"destroy_speeds": [
+					{
+						"speed": 32767,
+						"block": {
+                            "tags": "query.any_tag( 'minecraft:is_pickaxe_item_destructible', 'minecraft:is_hoe_item_destructible', 'minecraft:is_axe_item_destructible','minecraft:is_shovel_item_destructible','minecraft:is_sword_item_destructible' )"
+						}
+					}
+				]
+			}
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "format_version": "1.20.6",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "hraddons:manaita_material"
+        },
+        "tags": ["crafting_table"],
+        "pattern": [
+            "AAA",
+            "b b",
+            "AAA"
+        ],
+        "key": {
+            "A": {
+                "item": "minecraft:diamond_block"
+            },
+            "b": {
+                "item": "minecraft:crafting_table"
+            }
+        },
+        "result": {
+            "item": "hraddons:manaita_material",
+            "count": 4
+        }
+    }
+}

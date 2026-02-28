@@ -1,0 +1,23 @@
+{
+    "format_version": "1.20.6",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "hraddons:manaita_chest"
+        },
+        "tags": ["crafting_table"],
+        "pattern": [
+            "A A",
+            "AAA",
+            "AAA"
+        ],
+        "key": {
+            "A": {
+                "item": "hraddons:manaita_material"
+            }
+        },
+        "result": {
+            "item": "hraddons:manaita_chest",
+            "count": 1
+        }
+    }
+}

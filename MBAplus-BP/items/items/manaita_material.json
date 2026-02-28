@@ -1,0 +1,20 @@
+{
+    "format_version": "1.21.70",
+    "minecraft:item": {
+        "description": {
+            "identifier": "hraddons:manaita_material",
+            "menu_category": {
+                "category": "items"
+            }
+        },
+        "components": {
+            "minecraft:max_stack_size": 64,
+            "minecraft:icon":"manaita_material",
+            "minecraft:tags": {
+                "tags": [
+                    "minecraft:transform_materials"
+                ]
+            }
+        }
+    }
+}

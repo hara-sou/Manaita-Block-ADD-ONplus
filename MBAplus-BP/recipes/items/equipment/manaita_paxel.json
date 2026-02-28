@@ -1,0 +1,38 @@
+{
+    "format_version": "1.20.6",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "hraddons:manaita_paxel"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            " A ",
+            "BCD",
+            " E "
+        ],
+        "key": {
+            "A": {
+                "item": "hraddons:manaita_axe"
+            },
+            "B": {
+                "item": "hraddons:manaita_pickaxe"
+            },
+            "C": {
+                "item": "hraddons:manaita_sword"
+            },
+            "D": {
+                "item": "hraddons:manaita_shovel"
+            },
+            "E": {
+                "item": "hraddons:manaita_hoe"
+            }
+        },
+        "result": {
+            "item": "hraddons:manaita_paxel",
+            "count": 1
+        },
+        "priority": 2
+    }
+}

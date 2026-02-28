@@ -1,0 +1,22 @@
+{
+    "format_version": "1.20.6",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "hraddons:manaita_click_wooden"
+        },
+        "tags": ["crafting_table"],
+        "pattern": [
+            "AAA",
+            "AAA",
+            "AAA"
+        ],
+        "key": {
+            "A": {
+                "item": "minecraft:crafting_table"
+            }
+        },
+        "result": {
+            "item": "hraddons:manaita_click_wooden"
+        }
+    }
+}

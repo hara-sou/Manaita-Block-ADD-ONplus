@@ -1,0 +1,23 @@
+{
+    "format_version": "1.20.6",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "hraddons:manaita_block_stone_MCT"
+        },
+        "tags": ["hraddons:manaita_crafting_tag"],
+        "pattern": [
+            "",
+            " A ",
+            ""
+        ],
+        "key": {
+            "A": {
+                "item": "hraddons:manaita_block_wooden"
+            }
+        },
+        "result": {
+            "item": "hraddons:manaita_block_stone",
+            "count": 1
+        }
+    }
+}

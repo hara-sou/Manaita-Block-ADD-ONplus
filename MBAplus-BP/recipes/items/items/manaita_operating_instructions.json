@@ -1,0 +1,21 @@
+{
+    "format_version": "1.20.6",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "hraddons:manaita_operating_instructions"
+        },
+        "tags": ["crafting_table"],
+        "pattern": [
+            "A"
+        ],
+        "key": {
+            "A": {
+                "item": "minecraft:dirt"
+            }
+        },
+        "result": {
+            "item": "hraddons:manaita_operating_instructions",
+            "count": 1
+        }
+    }
+}

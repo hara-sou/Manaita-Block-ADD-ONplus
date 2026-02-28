@@ -1,0 +1,36 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "hraddons:manaita_crafting_table",
+            "menu_category": {
+                "category": "items"
+            }
+        },
+        "components": {
+            "minecraft:collision_box": true,
+            "minecraft:geometry": "minecraft:geometry.full_block",
+            "minecraft:material_instances": {
+                "down": {
+                    "texture": "hraddons:manaita_crafting_table_down"
+                },
+                "up": {
+                    "texture": "hraddons:manaita_crafting_table_up"
+                },
+                "*": {
+                    "texture": "hraddons:manaita_crafting_table_side"
+                }
+            },
+            "minecraft:destructible_by_mining":{
+                "seconds_to_destroy": 1
+            },
+            "minecraft:map_color": "#000000",
+            "minecraft:crafting_table": {
+                "crafting_tags": [
+                    "hraddons:manaita_crafting_tag"
+                ],
+                "table_name": "tile.hraddons:manaita_crafting_table.name"
+            }
+        }
+    }
+}

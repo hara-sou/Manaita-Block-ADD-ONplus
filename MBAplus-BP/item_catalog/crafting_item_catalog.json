@@ -1,0 +1,47 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:crafting_items_catalog": {
+        "categories": [
+            {
+                "category_name": "items",
+                "groups": [
+                    {
+                        "group_identifier": {
+                            "icon": "hraddons:manaita_block_wooden",
+                            "name": "hraddons:itemGroup.manaita_block"
+                        },
+                        "items": [
+                            "hraddons:manaita_block_wooden",
+                            "hraddons:manaita_block_stone",
+                            "hraddons:manaita_block_iron",
+                            "hraddons:manaita_block_golden",
+                            "hraddons:manaita_block_diamond",
+                            "hraddons:manaita_block_emerald",
+                            "hraddons:manaita_block_netherite"
+                        ]
+                    }
+                ]
+            },
+            {
+                "category_name": "items",
+                "groups": [
+                    {
+                        "group_identifier": {
+                            "icon": "hraddons:manaita_click_wooden",
+                            "name": "hraddons:itemGroup.manaita_click"
+                        },
+                        "items": [
+                            "hraddons:manaita_click_wooden",
+                            "hraddons:manaita_click_stone",
+                            "hraddons:manaita_click_iron",
+                            "hraddons:manaita_click_golden",
+                            "hraddons:manaita_click_diamond",
+                            "hraddons:manaita_click_emerald",
+                            "hraddons:manaita_click_netherite"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

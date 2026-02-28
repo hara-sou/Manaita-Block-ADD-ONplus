@@ -1,0 +1,23 @@
+{
+    "format_version": "1.20.6",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "hraddons:manaita_block_netherite"
+        },
+        "tags": ["crafting_table"],
+        "pattern": [
+            "AAA",
+            "AAA",
+            "AAA"
+        ],
+        "key": {
+            "A": {
+                "item": "hraddons:manaita_click_netherite"
+            }
+        },
+        "result": {
+            "item": "hraddons:manaita_block_netherite",
+            "count": 1
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "format_version": "1.20.6",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "hraddons:manaita_boots"
+        },
+        "tags": ["crafting_table"],
+        "pattern": [
+            "A A",
+            "A A",
+            "   "
+        ],
+        "key": {
+            "A": {
+                "item": "hraddons:manaita_material"
+            }
+        },
+        "result": {
+            "item": "hraddons:manaita_boots",
+            "count": 1
+        }
+    }
+}

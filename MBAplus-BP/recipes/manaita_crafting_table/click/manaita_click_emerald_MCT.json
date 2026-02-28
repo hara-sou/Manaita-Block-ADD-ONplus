@@ -1,0 +1,23 @@
+{
+    "format_version": "1.20.6",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "hraddons:manaita_click_emerald_MCT"
+        },
+        "tags": ["hraddons:manaita_crafting_tag"],
+        "pattern": [
+            "",
+            " A ",
+            ""
+        ],
+        "key": {
+            "A": {
+                "item": "hraddons:manaita_click_diamond"
+            }
+        },
+        "result": {
+            "item": "hraddons:manaita_click_emerald",
+            "count": 1
+        }
+    }
+}

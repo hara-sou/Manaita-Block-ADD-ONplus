@@ -1,0 +1,42 @@
+{
+    "format_version":"1.21.100",
+    "minecraft:item":{
+        "description":{
+            "identifier":"hraddons:manaita_axe",
+            "menu_category":{
+                "category":"equipment",
+                "group":"minecraft:itemGroup.name.axe"
+            }
+        },
+        "components":{
+            "minecraft:max_stack_size": 1,
+            "minecraft:allow_off_hand":{
+                "value": false
+            },
+            "minecraft:damage": {
+                "value": 32767
+            },
+            "minecraft:enchantable": {
+                "slot": "axe",
+                "value": 32767
+            },
+            "minecraft:hand_equipped":{
+                "value": true
+            },
+            "minecraft:icon":"manaita_axe",
+            "minecraft:digger": {
+                "use_efficiency": true,
+                "destroy_speeds": [
+                    {
+                        "block": {
+                            "tags": "q.any_tag('minecraft:is_axe_item_destructible')"
+                        },
+                        "speed": 32767
+                    }
+                ]
+            },
+            "hraddons:manaita_axe":{}
+        }
+    }
+
+}
