@@ -14,6 +14,12 @@
             "version": [4, 2, 0]
         }
     ],
+    "dependencies": [
+        {
+            "uuid": "6bad5942-399a-4fcc-9052-464348e4cec8",
+            "version": [4, 2, 0]
+        }
+    ],
     "metadata": {
         "product_type": "addon"
     }
