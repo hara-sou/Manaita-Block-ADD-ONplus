@@ -8,9 +8,6 @@
         "manaita_chest": {
             "textures":"textures/items/equipment/armor/manaita_chestplate"
         },
-        "manaita_chest_knockback": {
-            "textures":"textures/items/equipment/armor/manaita_chestplate+"
-        },
         "manaita_helmet": {
             "textures":"textures/items/equipment/armor/manaita_helmet"
         },
@@ -47,9 +44,6 @@
         },
         "manaita_xp_card": {
             "textures":"textures/items/items/manaita_xp_card"
-        },
-        "manaita_xp_card_orb": {
-            "textures":"textures/items/items/manaita_xp_card+"
         },
         "manaita_operating_instructions": {
             "textures":"textures/items/items/manaita_operating_instructions"
