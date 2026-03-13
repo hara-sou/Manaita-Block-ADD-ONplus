@@ -17,7 +17,7 @@
             },
             "minecraft:wearable": {
                 "slot": "slot.armor.chest",
-                "protection": 5
+                "protection": 32767
             },
             "minecraft:hover_text_color": {
                 "value": "aqua"

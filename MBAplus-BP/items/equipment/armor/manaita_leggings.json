@@ -17,7 +17,7 @@
             },
             "minecraft:wearable": {
                 "slot": "slot.armor.legs",
-                "protection": 3
+                "protection": 32767
             }
         }
     }
