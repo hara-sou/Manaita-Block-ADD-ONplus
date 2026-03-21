@@ -173,14 +173,18 @@ const flyingPlayers = new Set();
 world.afterEvents.itemUse.subscribe(ev => {
   if (ev.itemStack.typeId === "hraddons:manaita_module_fly") {
     const player = ev.source;
-    if(!flyingPlayers.has(player.id)){
-      // OFF -> ON
-      player.runCommand("ability @s mayfly true");
-      flyingPlayers.add(player.id);
-    } else {
-      // ON -> OFF
-      player.runCommand("ability @s mayfly false");
-      flyingPlayers.delete(player.id);
+    try{
+      if(!flyingPlayers.has(player.id)){
+        // OFF -> ON
+        player.runCommand("ability @s mayfly true");
+        flyingPlayers.add(player.id);
+      } else {
+        // ON -> OFF
+        player.runCommand("ability @s mayfly false");
+        flyingPlayers.delete(player.id);
+        }
+      } catch {
+        player.sendMessage("§a[error]このアイテムは現在使用できません。権限またはMinecraft Educationがオンになっているかを確認してください。");
       }
     }
 });
