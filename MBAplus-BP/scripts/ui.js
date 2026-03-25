@@ -32,6 +32,9 @@ function show_main_form(player){
             case 5:
                 show_info_form(player);
                 break;
+            case 6:
+                show_update_form(player);
+                break;
         }
     }).catch(error =>
         player.sendMessage("An error occurred: " + error.message)
@@ -132,6 +135,18 @@ function show_info_form(player){
     const form = new ActionFormData();
     form.title("アドオン情報");
     form.body({translate: "form.info.body"});
+    form.button("戻る");
+    form.show(player).then((response) => {
+        if(response.selection === 0){
+            show_main_form(player);
+        }
+    });
+}
+
+function show_update_form(player){
+    const form = new ActionFormData();
+    form.title("アップデートログ");
+    form.body({translate: "form.update.body"});
     form.button("戻る");
     form.show(player).then((response) => {
         if(response.selection === 0){
