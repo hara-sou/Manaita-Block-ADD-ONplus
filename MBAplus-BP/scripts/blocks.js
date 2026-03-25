@@ -1,13 +1,10 @@
 import { ItemStack, system } from "@minecraft/server";
 import { incBlk, noIncItems } from "./config";
 
-system.beforeEvents.startup.subscribe(({ blockComponentRegistry }) => {
-    if (!blockComponentRegistry) {
-        console.warn("[hraddons] blockComponentRegistry is undefined. Custom components not registered.");
-        return;
-    }
-
-    blockComponentRegistry.registerCustomComponent("hraddons:manaita_blocks", {
+system.beforeEvents.startup.subscribe( ev => {
+    ev.blockComponentRegistry.registerCustomComponent(
+        "hraddons:manaita_blocks",
+        {
         onEntityFallOn: ({ entity, block }) => {
             if (
                 !entity ||
