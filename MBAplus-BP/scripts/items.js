@@ -184,7 +184,7 @@ world.afterEvents.itemUse.subscribe(ev => {
         flyingPlayers.delete(player.id);
         }
       } catch {
-        player.sendMessage("§a[error]このアイテムは現在使用できません。権限またはMinecraft Educationがオンになっているかを確認してください。");
+        player.sendMessage("§c[error]このアイテムは現在使用できません。権限またはMinecraft Educationがオンになっているかを確認してください。");
       }
     }
 });

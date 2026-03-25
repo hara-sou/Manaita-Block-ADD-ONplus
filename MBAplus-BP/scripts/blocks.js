@@ -18,7 +18,7 @@ system.beforeEvents.startup.subscribe( ev => {
                 const players = block.dimension.getPlayers();
                 for(const player of players){
                     if(player.location.dimensionTo(block.location) < 5){
-                        player.sendMessage("§aこのブロックは増やせません")
+                        player.sendMessage("§cこのブロックは増やせません")
                     }
                 } return;
             }
