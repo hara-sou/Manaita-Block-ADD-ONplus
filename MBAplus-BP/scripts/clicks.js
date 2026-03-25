@@ -1,5 +1,5 @@
 import { system, ItemStack } from "@minecraft/server";
-import { incClk, noIncItems } from "./config";
+import { incClk, noIncList } from "./config";
 
 system.beforeEvents.startup.subscribe((initEvent) => {
     initEvent.itemComponentRegistry.registerCustomComponent("hraddons:manaita_clicks",{
@@ -9,9 +9,9 @@ system.beforeEvents.startup.subscribe((initEvent) => {
         if (!block || !itemStack) return;
 
         if (!(itemStack.typeId in incClk)) return;
-        if (noIncItems.includes(block.typeId)){
+        if (noIncList().includes(block.typeId)){
             if(player && player.sendMessage){
-                player.sendMessage("§a[warning]このブロックは増やせません");
+                player.sendMessage("§e[warning]このブロックは増やせません");
             }
             return;
         }

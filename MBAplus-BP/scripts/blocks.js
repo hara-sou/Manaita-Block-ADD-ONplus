@@ -1,5 +1,5 @@
 import { ItemStack, system } from "@minecraft/server";
-import { incBlk, noIncItems } from "./config";
+import { incBlk, noIncList } from "./config";
 
 system.beforeEvents.startup.subscribe( ev => {
     ev.blockComponentRegistry.registerCustomComponent(
@@ -14,7 +14,7 @@ system.beforeEvents.startup.subscribe( ev => {
             ) return;
 
             const { itemStack } = entity.getComponent("minecraft:item");
-            if(noIncItems.includes(itemStack.typeId)){
+            if(noIncList().includes(itemStack.typeId)){
                 const players = block.dimension.getPlayers();
                 for(const player of players){
                     if(player.location.dimensionTo(block.location) < 5){

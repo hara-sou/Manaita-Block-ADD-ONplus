@@ -1,3 +1,5 @@
+import { world } from "@minecraft/server";
+
 export const incBlk = {
     "hraddons:manaita_block_wooden": 1,
     "hraddons:manaita_block_stone": 2,
@@ -32,6 +34,18 @@ export const noIncItems = [
     "minecraft:fire",
     "minecraft:soul_fire"
     // noIncItems = Items that cannot be increased の短略化
-    // 増やせないアイテムを管理する
-    // リスト内のアイテムを検知すると止まる
+    // 増やせないアイテムのIDリスト
 ];
+
+// noIncList = noIncItemsを動的プロパティで保存するための関数、noIncItemsは初期値として使用される
+export function noIncList(){
+    let data = world.getDynamicProperty("noIncList");
+    if(!data){
+        data = JSON.stringify(noIncItems);
+        world.setDynamicProperty("noIncList", data);
+    }
+    return JSON.parse(data);
+}
+export function saveList(list){
+    world.setDynamicProperty("noIncList", JSON.stringify(list));
+}

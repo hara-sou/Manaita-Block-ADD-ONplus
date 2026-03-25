@@ -1,6 +1,6 @@
 import { world, DimensionLocation } from "@minecraft/server";
 import { ActionFormData, ModalFormData } from "@minecraft/server-ui";
-import { noIncItems } from "./config";
+import { noIncList } from "./config";
 
 function show_main_form(player){
     const form = new ActionFormData();
@@ -118,7 +118,7 @@ function show_item_form(player){
 function show_noItem_form(player){
     const form = new ActionFormData();
     form.title("増やせないアイテムリスト");
-    const listText = noIncItems.map(id => `・${id}`).join("\n");
+    const listText = noIncList().map(id => `・${id}`).join("\n");
     form.body(
         "以下のブロック・アイテムは増やすことができません。\n\n" +
         listText
