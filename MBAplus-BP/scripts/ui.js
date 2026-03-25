@@ -10,7 +10,8 @@ function show_main_form(player){
     form.button("まな板防具", "textures/items/equipment/armor/manaita_helmet");
     form.button("追加アイテム", "textures/items/items/manaita_material");
     form.button("増やせないアイテムリスト","textures/blocks/barrier");
-    form.button("アドオン情報","pack_icon");
+    form.button("アドオン情報","textures/MBAplus_pack_icon");
+    form.button("アップデートログ(v4.3.0)")
     form.show(player).then((response) => {
         switch(response.selection){
             case 0:
