@@ -1,6 +1,6 @@
 import { system, CommandPermissionLevel, CustomCommandStatus } from "@minecraft/server";
 import { ActionFormData, MessageFormData, ModalFormData } from "@minecraft/server-ui";
-import { noIncList, saveList } from "./config.js";
+import { noIncList, saveList } from "../config.js";
 
 // コマンド登録
 system.beforeEvents.startup.subscribe(ev => {

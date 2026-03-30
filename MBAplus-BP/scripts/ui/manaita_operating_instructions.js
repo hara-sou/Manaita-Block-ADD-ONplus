@@ -1,6 +1,6 @@
-import { world, DimensionLocation } from "@minecraft/server";
-import { ActionFormData, ModalFormData } from "@minecraft/server-ui";
-import { noIncList } from "./config";
+import { world } from "@minecraft/server";
+import { ActionFormData } from "@minecraft/server-ui";
+import { noIncList } from "../config.js";
 
 function show_main_form(player){
     const form = new ActionFormData();
