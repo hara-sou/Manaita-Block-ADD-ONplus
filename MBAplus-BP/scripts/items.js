@@ -139,7 +139,8 @@ system.beforeEvents.startup.subscribe(ev => {
       onUse(event) {
         const player = event.source;
         const hits = player.getEntitiesFromViewDirection({ maxDistance: 50 });
-        if (hits.length === 0) return;
+        if (hits.length === 0) return false;
+        player.dimension.playSound("random.explode", player.location);
         const target = hits[0].entity;
         const start = player.getHeadLocation();
         const end = { ...target.location };
