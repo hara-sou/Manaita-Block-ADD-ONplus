@@ -1,5 +1,5 @@
-pack.name=まな板ブロックアドオン+ RP §av4.3.0§f
-pack.description=制作:はらそう §av4.3.0§f
+pack.name=まな板ブロックアドオン+ RP §av4.3.1§f
+pack.description=制作:はらそう §av4.3.1§f
 tile.hraddons:manaita_block_wooden.name=まな板ブロック 木製
 tile.hraddons:manaita_block_stone.name=まな板ブロック 石製
 tile.hraddons:manaita_block_iron.name=まな板ブロック 鉄製
@@ -50,5 +50,5 @@ form.armor_chestplate.body=§aまな板のチェストプレート§f\n装備し
 form.armor_leggings.body=§aまな板のレギンス§f\n装備している間、跳躍力・透明化が付与されます
 form.armor_boots.body=§aまな板のブーツ§f\n装備している間移動速度上昇が付与され、常時満腹度が回復します
 form.item.body=§aマナ§f\nこのアドンで追加されたアイテムをクラフトするために使います\n\n§aまな板の作業台§f\n追加アイテムの効果を変更するために使用します\n\n§aまな板のXPカード§f\nオフハンドに装備している間、常時経験値が付与されます。また、使用することで経験値をリセットできます。\n\n§aまな板のXPカード オーブ生成§f\nオフハンドに装備している間、足元に経験値オーブがスポーンします。\n\n§a空のまな板モジュール§f\nまな板の作業台で特定のアイテムと組み合わせることで、まな板モジュールをクラフトできます\n\n§a飛行用まな板モジュール§f\nまな板の作業台で空のまな板モジュールとファントム膜を組み合わせることでクラフトできます。使用することで飛行能力が付与され、再度使用することで飛行能力が解除されます。\n※Minecraft Educationが有効の時のみ
-form.info.body=アドオンバージョン:v4.3.0§f\n制作:はらそう\n更新日:2026/03/25\nGitHub:\n§ahttps://github.com/hara-sou/Manaita-Block-ADD-ON§f\nDiscord:\n§9https://discord.gg/tEaYFt8gHK§f\nYouTube:\n§chttps://www.youtube.com/@ハラそう
+form.info.body=アドオンバージョン:v4.3.1§f\n制作:はらそう\n更新日:2026/04/01\nGitHub:\n§ahttps://github.com/hara-sou/Manaita-Block-ADD-ON§f\nDiscord:\n§9https://discord.gg/tEaYFt8gHK§f\nYouTube:\n§chttps://www.youtube.com/@ハラそう
 form.update.body=§av4.3.0§f\n増やせないアドオンリストをゲーム内からでも変更できるようにしました。\n管理者権限を持っているプレイヤーが§a/hr:noinc§fとコマンドを打つことでフォームを開くことができます。\n\n複数のアドオンを導入している環境で、取扱説明書内に表示される一部テクスチャが他のアドオンのものに置き換わってしまう問題を修正しました。\n\n@minecraf/serverのバージョンを2.6.0に変更しました。\n\n一部エラーチャットの文字の色を変更しました。\n\nカスタムコンポーネントが登録されていない問題を修正しました。
