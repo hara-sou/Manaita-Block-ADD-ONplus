@@ -11,7 +11,6 @@ function show_main_form(player){
     form.button("追加アイテム", "textures/items/items/manaita_material");
     form.button("増やせないアイテムリスト","textures/blocks/barrier");
     form.button("アドオン情報","textures/MBAplus_pack_icon");
-    form.button("アップデートログ(v4.3.0)")
     form.show(player).then((response) => {
         switch(response.selection){
             case 0:
@@ -32,15 +31,13 @@ function show_main_form(player){
             case 5:
                 show_info_form(player);
                 break;
-            case 6:
-                show_update_form(player);
-                break;
         }
     }).catch(error =>
         player.sendMessage("An error occurred: " + error.message)
     );
 }
 
+// case0
 function show_block_form(player){
     const form = new ActionFormData();
     form.title("クリックまな板・まな板ブロックについて");
@@ -53,6 +50,7 @@ function show_block_form(player){
     });
 }
 
+// case1
 function show_tool_form(player){
     const form = new ActionFormData();
     form.title("まな板ツールについて");
@@ -81,6 +79,7 @@ function show_tool_form(player){
     });
 }
 
+// case2
 function show_armor_form(player){
     const form =new ActionFormData();
     form.title("まな板防具について");
@@ -103,10 +102,25 @@ function show_armor_form(player){
     });
 }
 
+// case3
 function show_item_form(player){
     const form =new ActionFormData();
     form.title("追加アイテムについて");
-    form.body({translate: "form.item.body"});
+    form.body({
+        rawtext: [
+            {translate: "form.item_material.body"},
+            {text: "\n\n"},
+            {translate: "form.crafting_table.body"},
+            {text: "\n\n"},
+            {translate: "form.xp_card.body"},
+            {text: "\n\n"},
+            {translate: "form.xp_card_orb.body"},
+            {text: "\n\n"},
+            {translate: "form.module_empty.body"},
+            {text: "\n\n"},
+            {translate: "form.module_fly.body"}
+        ]
+    });
     form.button("戻る");
     form.show(player).then((response) => {
         if(response.selection === 0){
@@ -115,6 +129,7 @@ function show_item_form(player){
     });
 }
 
+// case4
 function show_noItem_form(player){
     const form = new ActionFormData();
     form.title("増やせないアイテムリスト");
@@ -131,22 +146,11 @@ function show_noItem_form(player){
     });
 }
 
+// case5
 function show_info_form(player){
     const form = new ActionFormData();
     form.title("アドオン情報");
     form.body({translate: "form.info.body"});
-    form.button("戻る");
-    form.show(player).then((response) => {
-        if(response.selection === 0){
-            show_main_form(player);
-        }
-    });
-}
-
-function show_update_form(player){
-    const form = new ActionFormData();
-    form.title("アップデートログ");
-    form.body({translate: "form.update.body"});
     form.button("戻る");
     form.show(player).then((response) => {
         if(response.selection === 0){
