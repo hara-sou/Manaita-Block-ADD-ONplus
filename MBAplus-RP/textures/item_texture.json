@@ -61,6 +61,9 @@
         "manaita_click_stone":{
             "textures":"textures/items/items/manaita_click_stone"
         },
+        "manaita_click_copper":{
+            "textures":"textures/items/items/manaita_click_copper"
+        },
         "manaita_click_iron":{
             "textures":"textures/items/items/manaita_click_iron"
         },

@@ -13,6 +13,7 @@
                         "items": [
                             "hraddons:manaita_block_wooden",
                             "hraddons:manaita_block_stone",
+                            "hraddons:manaita_block_copper",
                             "hraddons:manaita_block_iron",
                             "hraddons:manaita_block_golden",
                             "hraddons:manaita_block_diamond",
@@ -33,6 +34,7 @@
                         "items": [
                             "hraddons:manaita_click_wooden",
                             "hraddons:manaita_click_stone",
+                            "hraddons:manaita_click_copper",
                             "hraddons:manaita_click_iron",
                             "hraddons:manaita_click_golden",
                             "hraddons:manaita_click_diamond",

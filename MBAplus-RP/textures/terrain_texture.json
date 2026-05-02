@@ -22,6 +22,16 @@
             "textures": "textures/blocks/stone/manaita_block_stone_side"
         },
 
+        "hraddons:manaita_block_copper_down": {
+            "textures": "textures/blocks/copper/manaita_block_copper_down"
+        },
+        "hraddons:manaita_block_copper_up": {
+            "textures": "textures/blocks/copper/manaita_block_copper_up"
+        },
+        "hraddons:manaita_block_copper_side": {
+            "textures": "textures/blocks/copper/manaita_block_copper_side"
+        },
+
         "hraddons:manaita_block_iron_down": {
             "textures": "textures/blocks/iron/manaita_block_iron_down"
         },

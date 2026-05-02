@@ -1,0 +1,25 @@
+{
+    "format_version": "1.20.6",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "hraddons:manaita_click_copper"
+        },
+        "tags": ["crafting_table"],
+        "pattern": [
+            "AAA",
+            "BBB",
+            "AAA"
+        ],
+        "key": {
+            "B": {
+                "item": "minecraft:cobblestone"
+            },
+            "A": {
+                "item": "hraddons:manaita_click_stone"
+            }
+        },
+        "result": {
+            "item": "hraddons:manaita_click_copper"
+        }
+    }
+}
