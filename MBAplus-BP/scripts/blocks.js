@@ -48,9 +48,8 @@ system.beforeEvents.startup.subscribe(ev => {
 
             component.duplicateItems(itemStack, block, entity.dimension);
         },
+
         // プレイヤーがブロックを右クリックしたときの処理
-        // 実装未定のため、一旦コメントアウト
-        /*
         onPlayerInteract(event) {
             const player = event.player;
             const block = event.block;
@@ -75,7 +74,6 @@ system.beforeEvents.startup.subscribe(ev => {
                 player.sendMessage("§c[error]複製に失敗しました。");
             }
         }
-        */
     };
 
     ev.blockComponentRegistry.registerCustomComponent(
