@@ -4,20 +4,20 @@
         "name": "pack.name",
         "description": "pack.description",
         "uuid": "9a518044-3b09-4af4-b2ab-b552698ad4c2",
-        "version": [4, 3, 1],
+        "version": [4, 3, 2],
         "min_engine_version": [1, 26, 0]
     },
     "modules": [
         {
             "type": "resources",
             "uuid": "bb378134-3786-4c71-93a3-5e1415705637",
-            "version": [4, 3, 1]
+            "version": [4, 3, 2]
         }
     ],
     "dependencies": [
         {
             "uuid": "6bad5942-399a-4fcc-9052-464348e4cec8",
-            "version": [4, 3, 1]
+            "version": [4, 3, 2]
         }
     ],
     "metadata": {
