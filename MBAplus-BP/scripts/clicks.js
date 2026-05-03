@@ -14,7 +14,6 @@ system.beforeEvents.startup.subscribe((initEvent) => {
                 return;
             }
 
-            const totalAmount = 2 ** incClk[itemStack.typeId];
             const maxStackSize = itemStack.getMaxStackSize?.() ?? 64;
 
             const spawnLocation = {
@@ -26,7 +25,7 @@ system.beforeEvents.startup.subscribe((initEvent) => {
             // ★ チェストなどのインベントリを取得
             const blockInv = block.getComponent("minecraft:inventory")?.container;
 
-            let remaining = totalAmount;
+            let remaining = incClk[itemStack.typeId];;
 
             while (remaining > 0) {
                 const spawnAmount = Math.min(remaining, maxStackSize);

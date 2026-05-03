@@ -11,7 +11,6 @@ system.beforeEvents.startup.subscribe(ev => {
         // 共通処理: アイテムの複製とスポーン
         duplicateItems(itemStack, block, dimension) {
             const multiplier = incBlk[block.typeId] ?? 1;
-            const totalAmount = 2 ** multiplier;
             const maxStackSize = itemStack.getMaxStackSize?.() ?? 64;
 
             const spawnLocation = {
@@ -20,7 +19,7 @@ system.beforeEvents.startup.subscribe(ev => {
                 z: block.location.z + 0.5
             };
 
-            let remaining = totalAmount;
+            let remaining = multiplier;
 
             while (remaining > 0) {
                 const spawnAmount = Math.min(remaining, maxStackSize);

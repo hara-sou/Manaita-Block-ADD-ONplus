@@ -1,27 +1,27 @@
 import { world } from "@minecraft/server";
 
 export const incBlk = {
-    "hraddons:manaita_block_wooden": 1,
-    "hraddons:manaita_block_stone": 2,
-    "hraddons:manaita_block_copper": 3,
-    "hraddons:manaita_block_iron": 4,
-    "hraddons:manaita_block_golden": 5,
-    "hraddons:manaita_block_diamond": 6,
-    "hraddons:manaita_block_emerald": 7,
-    "hraddons:manaita_block_netherite": 8
+    "hraddons:manaita_block_wooden": 2,
+    "hraddons:manaita_block_stone": 4,
+    "hraddons:manaita_block_copper": 8,
+    "hraddons:manaita_block_iron": 16,
+    "hraddons:manaita_block_golden": 32,
+    "hraddons:manaita_block_diamond": 64,
+    "hraddons:manaita_block_emerald": 128,
+    "hraddons:manaita_block_netherite": 256
     // incBlk = Increased number of blocks の短略化
     // ブロックによって増えるアイテムの数
 };
 
 export const incClk = {
-    "hraddons:manaita_click_wooden": 1,
-    "hraddons:manaita_click_stone": 2,
-    "hraddons:manaita_click_copper": 3,
-    "hraddons:manaita_click_iron": 4,
-    "hraddons:manaita_click_golden": 5,
-    "hraddons:manaita_click_diamond": 6,
-    "hraddons:manaita_click_emerald": 7,
-    "hraddons:manaita_click_netherite": 8
+    "hraddons:manaita_click_wooden": 2,
+    "hraddons:manaita_click_stone": 4,
+    "hraddons:manaita_click_copper": 8,
+    "hraddons:manaita_click_iron": 16,
+    "hraddons:manaita_click_golden": 32,
+    "hraddons:manaita_click_diamond": 64,
+    "hraddons:manaita_click_emerald": 128,
+    "hraddons:manaita_click_netherite": 256
     // incClk = Increased number of clicks の短略化
     // アイテムによって増えるブロックの数
 }
