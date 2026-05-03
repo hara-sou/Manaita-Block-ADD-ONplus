@@ -1,6 +1,6 @@
 import { world } from "@minecraft/server";
 import { ActionFormData } from "@minecraft/server-ui";
-import { noIncList } from "../config.js";
+import { incBlk, noIncList } from "../config.js";
 
 function show_main_form(player){
     const form = new ActionFormData();
@@ -41,7 +41,28 @@ function show_main_form(player){
 function show_block_form(player){
     const form = new ActionFormData();
     form.title("クリックまな板・まな板ブロックについて");
-    form.body({translate: "form.block.body"});
+    // incBlkの内容をテキスト化(_blockの文字列を削除,wooden=木製 stone=石製とそれぞれ変換)して表示
+    const blockText = Object.entries(incBlk).map(([id, value]) => {
+        const name = id.replace("hraddons:manaita_block_", "").replace("hraddons:manaita_click_", "");
+        const translatedName =
+            name === "wooden" ? "木製" :
+            name === "stone" ? "石製" :
+            name === "copper" ? "銅製" :
+            name === "iron" ? "鉄製" :
+            name === "golden" ? "金製" :
+            name === "diamond" ? "ダイヤモンド製" :
+            name === "emerald" ? "エメラルド製" :
+            name === "netherite" ? "ネザライト製" :
+            name; // 変換できない場合はそのまま表示
+        return `・${translatedName} : ${value}`;
+    }).join("\n");
+    form.body({
+        rawtext: [
+            {translate: "form.block.body"},
+            {text: "\n\n"},
+            {text: blockText}
+        ]
+    });
     form.button("戻る");
     form.show(player).then((response) => {
         if(response.selection === 0){
