@@ -26,9 +26,8 @@ system.beforeEvents.startup.subscribe(ev => {
             pos
             );
         }
-        target.applyDamage(32767, {
-            cause: "entityAttack",
-            damagingEntity: player
-        });}
-    });
+        try{
+            target.kill();
+        } catch {}
+    }});
 });
