@@ -1,5 +1,5 @@
-pack.name=まな板ブロックアドオン+ RP §av4.3.3§f
-pack.description=制作:はらそう §av4.3.3§f
+pack.name=まな板ブロックアドオン+ RP §av4.3.4§f
+pack.description=制作:はらそう §av4.3.4§f
 tile.hraddons:manaita_block_wooden.name=まな板ブロック 木製
 tile.hraddons:manaita_block_stone.name=まな板ブロック 石製
 tile.hraddons:manaita_block_copper.name=まな板ブロック 銅製
@@ -57,4 +57,4 @@ form.xp_card.body=§aまな板のXPカード§f\nオフハンドに装備して�
 form.xp_card_orb.body=§aまな板のXPカード オーブ生成§f\nオフハンドに装備している間、足元に経験値オーブがスポーンします
 form.module_empty.body=§a空のまな板モジュール§f\nまな板の作業台で特定のアイテムと組み合わせることで、まな板モジュールをクラフトできます
 form.module_fly.body=§a飛行用まな板モジュール§f\nまな板の作業台で空のまな板モジュールとファントム膜を組み合わせることでクラフトできます。使用することで飛行能力が付与され、再度使用することで飛行能力が解除されます。\n※Minecraft Educationが有効の時のみ
-form.info.body=アドオンバージョン:v4.3.3§f\n制作:はらそう\n更新日:2026/05/04\nGitHub:\n§ahttps://github.com/hara-sou/Manaita-Block-ADD-ON§f\nDiscord:\n§9https://discord.gg/tEaYFt8gHK§f\nYouTube:\n§chttps://www.youtube.com/@ハラそう
+form.info.body=アドオンバージョン:v4.3.4§f\n制作:はらそう\n更新日:2026/06/18\nGitHub:\n§ahttps://github.com/hara-sou/Manaita-Block-ADD-ON§f\nDiscord:\n§9https://discord.gg/tEaYFt8gHK§f\nYouTube:\n§chttps://www.youtube.com/@ハラそう
