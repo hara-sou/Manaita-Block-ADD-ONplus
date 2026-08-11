@@ -39,8 +39,6 @@ item.hraddons:manaita_sword=まな板の剣
 item.hraddons:manaita_bow=まな板の弓
 
 ## アイテム
-item.hraddons:manaita_module_empty=空のまな板モジュール
-item.hraddons:manaita_module_fly=飛行用まな板モジュール
 item.hraddons:manaita_material=マナ
 item.hraddons:manaita_xp_card=まな板のXPカード
 item.hraddons:manaita_upgrade_knockback_template=ノックバック無効化

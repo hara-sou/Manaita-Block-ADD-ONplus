@@ -43,21 +43,6 @@
                         ]
                     }
                 ]
-            },
-            {
-                "category_name": "items",
-                "groups": [
-                    {
-                        "group_identifier": {
-                            "icon": "hraddons:manaita_module_empty",
-                            "name": "hraddons:itemGroup.manaita_module"
-                        },
-                        "items": [
-                            "hraddons:manaita_module_empty",
-                            "hraddons:manaita_module_fly"
-                        ]
-                    }
-                ]
             }
         ]
     }

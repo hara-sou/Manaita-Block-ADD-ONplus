@@ -48,12 +48,6 @@
         "manaita_operating_instructions": {
             "textures":"textures/items/items/manaita_operating_instructions"
         },
-        "manaita_module_empty": {
-            "textures":"textures/items/items/manaita_module_empty"
-        },
-        "manaita_module_fly": {
-            "textures":"textures/items/items/manaita_module_fly"
-        },
 
         "manaita_click_wooden":{
             "textures":"textures/items/items/manaita_click_wooden"
