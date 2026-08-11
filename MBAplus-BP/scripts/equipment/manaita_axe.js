@@ -27,9 +27,10 @@ const stripMap = {
     "minecraft:bamboo_block": "minecraft:stripped_bamboo_block",
 };
 
-
-// このタグを持たないブロックを破壊しても連鎖処理は行わない。
-const DESTRUCTIBLE_TAG = "minecraft:is_axe_item_destructible";
+const LOG_AND_WOOD_IDS = new Set([
+    ...Object.keys(stripMap),
+    ...Object.values(stripMap),
+]);
 
 // 1回で処理できる上限
 const MAX_CHAIN_COUNT = 200;
@@ -132,10 +133,8 @@ system.beforeEvents.startup.subscribe((initEvent) => {
             const { block, minedBlockPermutation } = event;
             if (!block) return;
 
-            // タグを持たないブロックは対象外にする
-            if (!minedBlockPermutation.hasTag(DESTRUCTIBLE_TAG)) return;
-
             const targetTypeId = minedBlockPermutation.type.id;
+            if (!LOG_AND_WOOD_IDS.has(targetTypeId)) return;
             const dim = block.dimension;
             const startLoc = block.location;
 
