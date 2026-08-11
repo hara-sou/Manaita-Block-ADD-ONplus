@@ -3,6 +3,7 @@
 import "./blocks.js";
 import "./clicks.js";
 import "./config.js";
+import "./fly.js";
 
 // equipmentファイル
 import "./equipment/manaita_axe.js";
