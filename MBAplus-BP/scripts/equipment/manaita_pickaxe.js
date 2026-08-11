@@ -12,7 +12,7 @@ const ORE_BLOCK_IDS = new Set([
     "minecraft:deepslate_gold_ore",
     "minecraft:redstone_ore",
     "minecraft:deepslate_redstone_ore",
-    "minecraft:lit_redstone_ore", // 光っている状態のレッドストーン鉱石
+    "minecraft:lit_redstone_ore",
     "minecraft:lapis_ore",
     "minecraft:deepslate_lapis_ore",
     "minecraft:diamond_ore",
@@ -25,7 +25,7 @@ const ORE_BLOCK_IDS = new Set([
 ]);
 
 // 1回で処理できる上限
-const MAX_CHAIN_COUNT = 64;
+const MAX_CHAIN_COUNT = 200;
 
 /**
  * 探索対象とする隣接方向のオフセット。
