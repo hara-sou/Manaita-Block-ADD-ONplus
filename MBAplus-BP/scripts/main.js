@@ -9,6 +9,7 @@ import "./equipment/manaita_axe.js";
 import "./equipment/manaita_bow.js";
 import "./equipment/manaita_chest_knockback.js";
 import "./equipment/manaita_hoe.js";
+import "./equipment/manaita_pickaxe.js";
 import "./equipment/manaita_shovel.js";
 
 // itemsファイル
