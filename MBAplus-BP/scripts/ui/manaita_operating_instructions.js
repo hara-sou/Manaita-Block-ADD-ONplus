@@ -14,22 +14,22 @@ function show_main_form(player){
     form.show(player).then((response) => {
         switch(response.selection){
             case 0:
-                show_block_form(player);
+                show_block_form(player);// クリックまな板・まな板ブロック
                 break;
             case 1:
-                show_tool_form(player);
+                show_tool_form(player);// まな板ツール
                 break;
             case 2:
-                show_armor_form(player);
+                show_armor_form(player);// まな板防具
                 break;
             case 3:
-                show_item_form(player);
+                show_item_form(player);// 追加アイテム
                 break;
             case 4:
-                show_noItem_form(player);
+                show_noItem_form(player);// 増やせないアイテムリスト
                 break;
             case 5:
-                show_info_form(player);
+                show_info_form(player);// アドオン情報
                 break;
         }
     }).catch(error =>
@@ -112,7 +112,9 @@ function show_armor_form(player){
             {text: "\n\n"},
             {translate: "form.armor_leggings.body"},
             {text: "\n\n"},
-            {translate: "form.armor_boots.body"}
+            {translate: "form.armor_boots.body"},
+            {translate: "\n\n"},
+            {translate: "form.armor_fly.body"}
         ]
     });
     form.button("戻る");
