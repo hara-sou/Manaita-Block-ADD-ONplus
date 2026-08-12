@@ -12,7 +12,7 @@ const FLIGHT_ARMOR_SET = {
 };
 
 /** 水平方向の飛行速度（1tickあたりの移動量） */
-const FLIGHT_SPEED = 1.0;
+const FLIGHT_SPEED = 0.75;
 /** 上昇・下降速度（1tickあたりの移動量） */
 const VERTICAL_SPEED = 0.5;
 /** ダブルジャンプとみなす猶予時間（tick）。20tick = 1秒 */
