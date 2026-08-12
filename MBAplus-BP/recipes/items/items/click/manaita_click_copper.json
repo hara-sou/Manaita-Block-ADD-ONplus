@@ -11,11 +11,11 @@
             "AAA"
         ],
         "key": {
-            "B": {
-                "item": "minecraft:cobblestone"
-            },
             "A": {
                 "item": "hraddons:manaita_click_stone"
+            },
+            "B": {
+                "item": "minecraft:copper_block"
             }
         },
         "result": {
