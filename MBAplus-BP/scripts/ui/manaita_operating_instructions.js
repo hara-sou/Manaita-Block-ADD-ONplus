@@ -135,11 +135,7 @@ function show_item_form(player){
             {text: "\n\n"},
             {translate: "form.xp_card.body"},
             {text: "\n\n"},
-            {translate: "form.xp_card_orb.body"},
-            {text: "\n\n"},
-            {translate: "form.module_empty.body"},
-            {text: "\n\n"},
-            {translate: "form.module_fly.body"}
+            {translate: "form.xp_card_orb.body"}
         ]
     });
     form.button("戻る");
