@@ -15,7 +15,6 @@ import "./equipment/manaita_shovel.js";
 import "./equipment/manaita_sword.js";
 
 // itemsファイル
-import "./items/manaita_module.js";
 import "./items/manaita_xp.js";
 
 // uiファイル
