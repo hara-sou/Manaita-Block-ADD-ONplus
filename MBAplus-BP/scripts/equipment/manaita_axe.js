@@ -1,4 +1,5 @@
 import { system, BlockPermutation } from "@minecraft/server";
+import { chainProcess, MassDestruction } from "./chainBreak";
 
 // 原木ブロックと、対応する「皮を剥いだ」ブロックの対応表。
 const stripMap = {
@@ -31,68 +32,6 @@ const LOG_AND_WOOD_IDS = new Set([
     ...Object.keys(stripMap),
     ...Object.values(stripMap),
 ]);
-
-// 1回で処理できる上限
-const MAX_CHAIN_COUNT = 200;
-
-// 探索対象の座標(26方向)を自動生成する
-const NEIGHBOR_OFFSETS = (() => {
-    const offsets = [];
-    for (let x = -1; x <= 1; x++) {
-        for (let y = -1; y <= 1; y++) {
-            for (let z = -1; z <= 1; z++) {
-                if (x === 0 && y === 0 && z === 0) continue; // 中心（自分自身）は除外
-                offsets.push({ x, y, z });
-            }
-        }
-    }
-    return offsets;
-})();
-
-function chainProcess(dim, startLoc, targetTypeId, action) {
-    // 探索済み座標を記録するSet（同じ座標を何度もキューに入れないようにする）
-    const visited = new Set();
-    const key = (p) => `${p.x},${p.y},${p.z}`;
-
-    // BFS用のキュー。まずは起点座標だけを入れておく
-    const queue = [startLoc];
-    visited.add(key(startLoc));
-
-    let count = 0;
-
-    while (queue.length > 0 && count < MAX_CHAIN_COUNT) {
-        const loc = queue.shift();
-        const current = dim.getBlock(loc);
-
-        // ブロックが取得できない、または対象のブロックでなければスキップ
-        if (!current || current.typeId !== targetTypeId) continue;
-
-        // 対象ブロックに対する実処理（剥皮 or 破壊）を実行
-        action(dim, loc, current);
-        count++;
-
-        // このブロックの周囲6方向を調べ、同じブロックがあればキューに追加
-        for (const off of NEIGHBOR_OFFSETS) {
-            const next = {
-                x: loc.x + off.x,
-                y: loc.y + off.y,
-                z: loc.z + off.z,
-            };
-            const k = key(next);
-
-            // 既に探索済みの座標は無視（無限ループ防止）
-            if (visited.has(k)) continue;
-            visited.add(k);
-
-            const neighborBlock = dim.getBlock(next);
-            if (neighborBlock && neighborBlock.typeId === targetTypeId) {
-                queue.push(next);
-            }
-        }
-    }
-
-    return count;
-}
 
 // ワールド起動時にカスタムアイテムコンポーネントを登録する
 system.beforeEvents.startup.subscribe((initEvent) => {
@@ -135,23 +74,10 @@ system.beforeEvents.startup.subscribe((initEvent) => {
 
             const targetTypeId = minedBlockPermutation.type.id;
             if (!LOG_AND_WOOD_IDS.has(targetTypeId)) return;
-            const dim = block.dimension;
-            const startLoc = block.location;
 
             // 起点ブロック自体はプレイヤーの操作で既に破壊済みなので、
             // その周囲6方向それぞれを起点としてBFS連鎖破壊を開始する
-            for (const off of NEIGHBOR_OFFSETS) {
-                const pos = {
-                    x: startLoc.x + off.x,
-                    y: startLoc.y + off.y,
-                    z: startLoc.z + off.z,
-                };
-
-                chainProcess(dim, pos, targetTypeId, (d, loc) => {
-                    // ドロップアイテム・破壊パーティクル・サウンドを伴って破壊する
-                    d.runCommand(`setblock ${loc.x} ${loc.y} ${loc.z} air destroy`);
-                });
-            }
+            MassDestruction(block.dimension, block.location, targetTypeId);
         },
     });
 });
