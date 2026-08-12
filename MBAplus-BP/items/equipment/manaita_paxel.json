@@ -32,7 +32,8 @@
 						}
 					}
 				]
-			}
+			},
+            "hraddons:manaita_paxel":{}
         }
     }
 }
