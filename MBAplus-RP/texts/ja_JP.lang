@@ -1,6 +1,6 @@
 ## アドオン情報
-pack.name=まな板ブロックアドオン+ RP §av4.3.4§f
-pack.description=制作:はらそう §av4.3.4§f
+pack.name=まな板ブロックアドオン+ RP §av4.4.0§f
+pack.description=制作:はらそう §av4.4.0§f
 
 ## まな板ブロック
 tile.hraddons:manaita_block_wooden.name=まな板ブロック 木製
@@ -69,4 +69,4 @@ form.item_material.body=§aマナ§f\nこのアドンで追加されたアイテ
 form.crafting_table.body=§aまな板の作業台§f\n追加アイテムの効果を変更するために使用します
 form.xp_card.body=§aまな板のXPカード§f\nオフハンドに装備している間、常時経験値が付与されます。また、使用することで経験値をリセットできます
 form.xp_card_orb.body=§aまな板のXPカード オーブ生成§f\nオフハンドに装備している間、足元に経験値オーブがスポーンします
-form.info.body=アドオンバージョン:v4.3.4§f\n制作:はらそう\n更新日:2026/06/18\nGitHub:\n§ahttps://github.com/hara-sou/Manaita-Block-ADD-ON§f\nDiscord:\n§9https://discord.gg/tEaYFt8gHK§f\nYouTube:\n§chttps://www.youtube.com/@ハラそう
+form.info.body=アドオンバージョン:v4.4.0§f\n制作:はらそう\n更新日:2026/08/12\nGitHub:\n§ahttps://github.com/hara-sou/Manaita-Block-ADD-ON§f\nDiscord:\n§9https://discord.gg/tEaYFt8gHK§f\nYouTube:\n§chttps://www.youtube.com/@ハラそう
