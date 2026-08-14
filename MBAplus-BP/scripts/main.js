@@ -4,6 +4,7 @@ import "./blocks.js";
 import "./clicks.js";
 import "./config.js";
 import "./fly.js";
+import "./InstantKill.js";
 
 // equipmentファイル
 import "./equipment/chainBreak.js"
