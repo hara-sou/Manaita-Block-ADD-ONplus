@@ -35,8 +35,8 @@
                     }
                 ]
             },
-            "hraddons:manaita_axe":{}
+            "hraddons:manaita_axe":{},
+            "hraddons:InstantKill":{}
         }
     }
-
 }

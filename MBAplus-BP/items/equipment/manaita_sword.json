@@ -34,7 +34,8 @@
 					}
 				]
 			},
-            "hraddons:manaita_sword":{}
+            "hraddons:manaita_sword":{},
+            "hraddons:InstantKill":{}
         }
     }
 }

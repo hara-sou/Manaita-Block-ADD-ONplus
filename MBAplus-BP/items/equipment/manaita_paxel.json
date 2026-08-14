@@ -33,7 +33,8 @@
 					}
 				]
 			},
-            "hraddons:manaita_paxel":{}
+            "hraddons:manaita_paxel":{},
+            "hraddons:InstantKill":{}
         }
     }
 }
