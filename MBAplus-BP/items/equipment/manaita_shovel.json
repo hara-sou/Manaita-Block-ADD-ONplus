@@ -35,7 +35,14 @@
                     }
                 ]
             },
-            "hraddons:manaita_shovel": {}
+            "minecraft:tags": {
+                "tags": [
+                    "minecraft:digger",
+                    "minecraft:is_shovel",
+                    "minecraft:is_tool",
+                    "hraddons:manaita_tier"
+                ]
+            }
         }
     }
 

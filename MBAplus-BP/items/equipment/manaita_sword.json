@@ -34,7 +34,13 @@
 					}
 				]
 			},
-            "hraddons:manaita_sword":{},
+            "minecraft:tags": {
+                "tags": [
+                    "minecraft:is_sword",
+                    "minecraft:is_tool",
+                    "hraddons:manaita_tier"
+                ]
+            },
             "hraddons:InstantKill":{}
         }
     }

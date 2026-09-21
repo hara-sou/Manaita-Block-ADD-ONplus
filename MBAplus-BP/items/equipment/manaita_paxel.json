@@ -33,7 +33,16 @@
 					}
 				]
 			},
-            "hraddons:manaita_paxel":{},
+            "minecraft:tags": {
+                "tags": [
+                    "minecraft:digger",
+                    "minecraft:is_axe",
+                    "minecraft:is_pickaxe",
+                    "minecraft:is_sword",
+                    "minecraft:is_tool",
+                    "hraddons:manaita_tier"
+                ]
+            },
             "hraddons:InstantKill":{},
             "hraddons:hoe_shovel":{}
         }

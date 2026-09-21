@@ -34,7 +34,14 @@
 					}
 				]
 			},
-            "hraddons:manaita_pickaxe":{}
+            "minecraft:tags": {
+                "tags": [
+                    "minecraft:digger",
+                    "minecraft:is_pickaxe",
+                    "minecraft:is_tool",
+                    "hraddons:manaita_tier"
+                ]
+            }
         }
     }
 

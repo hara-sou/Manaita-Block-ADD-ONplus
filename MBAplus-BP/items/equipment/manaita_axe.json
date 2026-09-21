@@ -35,7 +35,14 @@
                     }
                 ]
             },
-            "hraddons:manaita_axe":{},
+            "minecraft:tags": {
+                "tags": [
+                    "minecraft:digger",
+                    "minecraft:is_axe",
+                    "minecraft:is_tool",
+                    "hraddons:manaita_tier"
+                ]
+            },
             "hraddons:InstantKill":{}
         }
     }
