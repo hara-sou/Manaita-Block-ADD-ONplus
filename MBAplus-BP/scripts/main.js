@@ -10,6 +10,7 @@ import "./InstantKill.js";
 import "./equipment/chainBreak.js"
 import "./equipment/manaita_bow.js";
 import "./equipment/manaita_chest_knockback.js";
+import "./equipment/hoe&shovel.js";
 
 // itemsファイル
 import "./items/manaita_xp.js";
