@@ -1,7 +1,3 @@
-## アドオン情報
-pack.name=まな板ブロックアドオン+ RP §av4.4.1§f
-pack.description=制作:はらそう §av4.4.1§f
-
 ## まな板ブロック
 tile.hraddons:manaita_block_wooden.name=まな板ブロック 木製
 tile.hraddons:manaita_block_stone.name=まな板ブロック 石製

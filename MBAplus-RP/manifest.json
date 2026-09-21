@@ -1,8 +1,8 @@
 {
     "format_version": 2,
     "header": {
-        "name": "pack.name",
-        "description": "pack.description",
+        "name": "まな板アドオン+",
+        "description": "ResourcePack §av4.4.1",
         "uuid": "9a518044-3b09-4af4-b2ab-b552698ad4c2",
         "version": [4, 4, 1],
         "min_engine_version": [1, 26, 0]
