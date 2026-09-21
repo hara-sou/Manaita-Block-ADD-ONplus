@@ -1,8 +1,8 @@
 {
     "format_version": 2,
     "header": {
-        "name": "pack.name",
-        "description": "pack.description",
+        "name": "まな板ブロックアドオン+",
+        "description": "BehaviorPack §av4.4.1",
         "uuid": "6bad5942-399a-4fcc-9052-464348e4cec8",
         "version": [4, 4, 1],
         "min_engine_version": [1, 26, 0]
