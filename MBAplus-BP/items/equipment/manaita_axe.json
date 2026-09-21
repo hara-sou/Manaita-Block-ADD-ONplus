@@ -43,7 +43,8 @@
                     "hraddons:manaita_tier"
                 ]
             },
-            "hraddons:InstantKill":{}
+            "hraddons:InstantKill":{},
+            "hraddons:mass_destruction":{}
         }
     }
 }

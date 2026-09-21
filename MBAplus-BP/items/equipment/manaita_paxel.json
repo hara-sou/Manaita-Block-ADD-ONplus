@@ -40,11 +40,13 @@
                     "minecraft:is_pickaxe",
                     "minecraft:is_sword",
                     "minecraft:is_tool",
+                    "hraddons:is_paxel",
                     "hraddons:manaita_tier"
                 ]
             },
             "hraddons:InstantKill":{},
-            "hraddons:hoe_shovel":{}
+            "hraddons:hoe_shovel":{},
+            "hraddons:mass_destruction":{}
         }
     }
 }

@@ -36,7 +36,8 @@
                     "minecraft:is_tool",
                     "hraddons:manaita_tier"
                 ]
-            }
+            },
+            "hraddons:mass_destruction":{}
         }
     }
 }
