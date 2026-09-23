@@ -10,7 +10,7 @@ function show_main_form(player){
     form.button("まな板防具", "textures/items/equipment/armor/manaita_helmet");
     form.button("追加アイテム", "textures/items/items/manaita_material");
     form.button("増やせないアイテムリスト","textures/blocks/barrier");
-    form.button("アドオン情報","textures/MBAplus_pack_icon");
+    form.button("アドオン情報","pack_icon.png");
     form.show(player).then((response) => {
         switch(response.selection){
             case 0:
@@ -179,7 +179,7 @@ function show_info_form(player){
 }
 
 world.afterEvents.itemUse.subscribe(ev => {
-    if(ev.itemStack.typeId == "hraddons:manaita_operating_instructions"){
+    if(ev.itemStack.typeId == "hraddons:manaita_torisetu"){
         let player = ev.source;
         show_main_form(player);
     }

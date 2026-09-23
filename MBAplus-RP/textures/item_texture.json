@@ -45,8 +45,8 @@
         "manaita_xp_card": {
             "textures":"textures/items/items/manaita_xp_card"
         },
-        "manaita_operating_instructions": {
-            "textures":"textures/items/items/manaita_operating_instructions"
+        "manaita_torisetu": {
+            "textures":"textures/items/items/manaita_torisetu"
         },
 
         "manaita_click_wooden":{

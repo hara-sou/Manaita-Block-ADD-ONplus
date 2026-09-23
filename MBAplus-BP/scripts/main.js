@@ -16,5 +16,5 @@ import "./equipment/hoe&shovel.js";
 import "./items/manaita_xp.js";
 
 // uiファイル
-import "./ui/manaita_operating_instructions.js";
+import "./ui/manaita_torisetu.js";
 import "./ui/noinc.js";

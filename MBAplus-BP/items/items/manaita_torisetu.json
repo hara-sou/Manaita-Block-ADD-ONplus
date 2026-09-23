@@ -2,14 +2,14 @@
     "format_version": "1.21.70",
     "minecraft:item": {
         "description": {
-            "identifier": "hraddons:manaita_operating_instructions",
+            "identifier": "hraddons:manaita_torisetu",
             "menu_category": {
                 "category": "items"
             }
         },
         "components": {
             "minecraft:max_stack_size": 1,
-            "minecraft:icon":"manaita_operating_instructions"
+            "minecraft:icon":"manaita_torisetu"
         }
     }
 }
