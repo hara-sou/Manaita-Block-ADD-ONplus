@@ -1,6 +1,7 @@
 import { system, CommandPermissionLevel, CustomCommandStatus } from "@minecraft/server";
 import { ActionFormData, MessageFormData, ModalFormData } from "@minecraft/server-ui";
 import { noIncList, saveList } from "../config.js";
+import { localizedName } from "./localize.js";
 
 // コマンド登録
 system.beforeEvents.startup.subscribe(ev => {
@@ -100,7 +101,11 @@ function openRemoveUI(player){
 
     const form = new ActionFormData()
         .title("削除するアイテムを選択");
-    list.forEach(id => form.button(id));
+    list.forEach(id => {
+        form.button({
+            rawtext: [localizedName(id), { text: `\n(${id})` }]
+        });
+    });
 
     form.show(player).then(res => {
         if(res.canceled){
@@ -121,14 +126,24 @@ function openRemoveUI(player){
 
 // 一覧UI
 function openListUI(player){
+    const list = noIncList();
     const form = new ActionFormData()
-    form.title(`増やせないアイテムリスト(${noIncList().length})`);
-    const listText = noIncList().map(id => `・${id}`).join("\n");
-    form.body(listText.length > 0 ? listText : "§c[error]現在、増やせないアイテムはありません");
+        .title(`増やせないアイテムリスト(${list.length})`);
+
+    if(list.length === 0){
+        form.body("§c[error]現在、増やせないアイテムはありません")
+    } else {
+        const rawtext = [];
+        for(const id of list){
+            rawtext.push({ text: "・"});
+            rawtext.push(localizedName(id));
+            rawtext.push({ text: ` (${id})\n`});
+        }
+        form.body({ rawtext });
+    }
     form.show(player).then(res => {
         if(res.canceled){
             openMainUI(player);
-            return;
         }
     });
 }

@@ -18,3 +18,4 @@ import "./items/manaita_xp.js";
 // uiファイル
 import "./ui/manaita_torisetu.js";
 import "./ui/noinc.js";
+import "./ui/localize.js";

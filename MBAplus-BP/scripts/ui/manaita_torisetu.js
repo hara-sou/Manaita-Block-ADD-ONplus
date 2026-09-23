@@ -1,6 +1,7 @@
 import { world } from "@minecraft/server";
 import { ActionFormData } from "@minecraft/server-ui";
 import { incBlk, noIncList } from "../config.js";
+import { localizedName } from "./localize.js";
 
 function show_main_form(player){
     const form = new ActionFormData();
@@ -152,11 +153,16 @@ function show_item_form(player){
 function show_noItem_form(player){
     const form = new ActionFormData();
     form.title("増やせないアイテムリスト");
-    const listText = noIncList().map(id => `・${id}`).join("\n");
-    form.body(
-        "以下のブロック・アイテムは増やすことができません。\n\n" +
-        listText
-    );
+
+    const list = noIncList();
+    const rawtext = [{ text: "以下のブロック・アイテムは増やすことができません。\n\n" }];
+    for (const id of list) {
+        rawtext.push({ text: "・" });
+        rawtext.push(localizedName(id));
+        rawtext.push({ text: "\n" });
+    }
+    form.body({ rawtext });
+
     form.button("戻る");
     form.show(player).then((response) => {
         if(response.selection === 0){
